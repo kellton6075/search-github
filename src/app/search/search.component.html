@@ -1,0 +1,20 @@
+
+<div class="container">
+  <br>
+  <br><br><br><br>
+
+
+  <label>Search Projects</label><input type="text" [(ngModel)]="data">
+  <button (click)=func() class="btn btn-success">Search</button>
+
+
+<!-- <a  href="https://github.com/search?utf8=%E2%9C%93&q=">Search project</a> -->
+<div *ngIf="count==1" class="container">
+<ul *ngFor="let item of var1.items">
+
+  <li>{{item.description}}</li>
+<a href="{{item.html_url}}">{{item.html_url}}</a>
+</ul>
+
+</div>
+</div>

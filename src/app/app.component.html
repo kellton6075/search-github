@@ -1,0 +1,23 @@
+<div class="container">
+  <nav>
+
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/help" routerLinkActive="active">Help</a>
+    <a routerLink="/search" routerLinkActive="active">Search</a>
+
+  </nav>
+  <router-outlet></router-outlet><br><br><br><br><br><br>
+
+
+  <label>Enter User Name</label><input type="text" [(ngModel)]="data">
+  <button (click)=func() class="btn btn-success">Submit</button>
+  <br><br><br><br><br><br>
+<div *ngIf="count==1" class="container">
+  <label>Name:</label>{{var1.name}}<br>
+  <label>Id:</label>{{var1.id}}<br>
+  <label>Company:</label>{{var1.company}}<br>
+  <label>Location:</label>{{var1.location}}<br>
+  <label>Email:</label>{{var1.email}}
+
+</div>
+</div>
